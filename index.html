@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container mt-5">
+        <h1 class="text-center">Bookmarker</h1>
+        <hr>
+        <h4 class="d-flex align-content-center justify-content-center bg-gradient"><i class="fa-solid fa-bookmark p-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark p-1"></i></h4>
+        <div class="mb-3">
+          <label for="bookmarkName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+          <input type="text" id="bookmarkName" class="form-control" placeholder="Enter bookmark name">
+        </div>
+        <div class="mb-3">
+          <label for="bookmarkURL" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input type="text" id="bookmarkURL" class="form-control" placeholder="Enter website URL">
+          <small class="error-message">Both fields are required.</small>
+          <div class="validation-rules">
+            <p><i class="fas fa-exclamation-circle text-danger"></i> Site name must have at least 3 characters.</p>
+            <p><i class="fas fa-exclamation-circle text-danger"></i> URL must start with **http** or **https**.</p>
+
+          </div>
+        </div>
+        <button id="addBookmark" class="btn btn-danger mb-4 mx-auto d-flex align-content-centerc justify-content-center">Submit</button>
+    
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="bookmarkList"></tbody>
+        </table>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
+    
+   <script src="main.js"></script> 
+</body>

@@ -1,0 +1,10 @@
+.error-message {
+    color: red;
+    display: none;
+    font-size: 0.9rem;
+  }
+  .validation-rules {
+    display: none;
+    color: #dc3545;
+    font-size: 0.9rem;
+  }
